@@ -2,13 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+/*
+class Square extends React.Component {
 
- function Square(props){
-      return(
+    render() {
+      return (
         <button 
             className="square" 
-            onClick={()=>props.onClick()}
+            onClick={()=>this.props.onClick()}
         >
+          {this.props.value}
+        </button>
+      );
+    }
+  }*/
+  function Square(props){
+      return(
+          /* gdyby był komponent dziedziczący po klasie
+          to musiałoby być onClick={()=>this.props.onClick()} */
+        <button className="square" onClick={props.onClick}>
         {props.value}
         </button>
       )
@@ -20,6 +32,7 @@ import './index.css';
         {/* state w konstruktorze, chyba o tym nie pamietalem*/}
         this.state = {
             squares: Array(9).fill(null),
+            xIsNext: true,
         }
     }
 
@@ -28,8 +41,11 @@ import './index.css';
         gdybym zmieniał bezpośredno, w przyszłości nie miałbym możliwości
         powrotu do poprzedniego stanu */
         const squares = this.state.squares.slice()
-        squares[i] = 'X'
-        this.setState({squares: squares})
+        squares[i] = this.state.xIsNext ? 'X' : 'O'
+        this.setState({
+            squares: squares,
+            xIsNext: !this.state.xIsNext,
+        })
     }
 
     renderSquare(i) {
