@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/budnickip/kolkoikrzyzyk/static/css/main.55d72bbf.chunk.css",
-    "main.js": "/budnickip/kolkoikrzyzyk/static/js/main.bd349fda.chunk.js",
-    "main.js.map": "/budnickip/kolkoikrzyzyk/static/js/main.bd349fda.chunk.js.map",
-    "runtime-main.js": "/budnickip/kolkoikrzyzyk/static/js/runtime-main.8d1d5dae.js",
-    "runtime-main.js.map": "/budnickip/kolkoikrzyzyk/static/js/runtime-main.8d1d5dae.js.map",
-    "static/js/2.a5278039.chunk.js": "/budnickip/kolkoikrzyzyk/static/js/2.a5278039.chunk.js",
-    "static/js/2.a5278039.chunk.js.map": "/budnickip/kolkoikrzyzyk/static/js/2.a5278039.chunk.js.map",
-    "index.html": "/budnickip/kolkoikrzyzyk/index.html",
-    "precache-manifest.e07dcec95d768caa48f8ce60e6f60b62.js": "/budnickip/kolkoikrzyzyk/precache-manifest.e07dcec95d768caa48f8ce60e6f60b62.js",
-    "service-worker.js": "/budnickip/kolkoikrzyzyk/service-worker.js",
-    "static/css/main.55d72bbf.chunk.css.map": "/budnickip/kolkoikrzyzyk/static/css/main.55d72bbf.chunk.css.map",
-    "static/js/2.a5278039.chunk.js.LICENSE.txt": "/budnickip/kolkoikrzyzyk/static/js/2.a5278039.chunk.js.LICENSE.txt"
+    "main.css": "/kolkoikrzyzyk/static/css/main.55d72bbf.chunk.css",
+    "main.js": "/kolkoikrzyzyk/static/js/main.bd349fda.chunk.js",
+    "main.js.map": "/kolkoikrzyzyk/static/js/main.bd349fda.chunk.js.map",
+    "runtime-main.js": "/kolkoikrzyzyk/static/js/runtime-main.09796243.js",
+    "runtime-main.js.map": "/kolkoikrzyzyk/static/js/runtime-main.09796243.js.map",
+    "static/js/2.a5278039.chunk.js": "/kolkoikrzyzyk/static/js/2.a5278039.chunk.js",
+    "static/js/2.a5278039.chunk.js.map": "/kolkoikrzyzyk/static/js/2.a5278039.chunk.js.map",
+    "index.html": "/kolkoikrzyzyk/index.html",
+    "precache-manifest.6dd0f03ce0d0e4b01a4c7a2c439a20c0.js": "/kolkoikrzyzyk/precache-manifest.6dd0f03ce0d0e4b01a4c7a2c439a20c0.js",
+    "service-worker.js": "/kolkoikrzyzyk/service-worker.js",
+    "static/css/main.55d72bbf.chunk.css.map": "/kolkoikrzyzyk/static/css/main.55d72bbf.chunk.css.map",
+    "static/js/2.a5278039.chunk.js.LICENSE.txt": "/kolkoikrzyzyk/static/js/2.a5278039.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d1d5dae.js",
+    "static/js/runtime-main.09796243.js",
     "static/js/2.a5278039.chunk.js",
     "static/css/main.55d72bbf.chunk.css",
     "static/js/main.bd349fda.chunk.js"
