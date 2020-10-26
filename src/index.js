@@ -71,6 +71,7 @@ class Square extends React.Component {
         }],
         stepNumber: 0,
         xIsNext: true,
+        status: 'Next player: X'
       }
     }
 
@@ -95,6 +96,11 @@ class Square extends React.Component {
           stepNumber: history.length,
           xIsNext: !this.state.xIsNext,
       })
+     /* if(this.state.stepNumber == 8){
+        this.setState({
+          status: "Koniec gry, REMIS!"
+        })
+      } */
     }
 
     jumpTo(step){
@@ -109,12 +115,18 @@ class Square extends React.Component {
       const current = history[this.state.stepNumber]
       const winner = calculateWinner(current.squares)
       let status
-
-      if(winner){
-        status = "Wygrywa gracz " + winner 
+      if(this.state.stepNumber == 9){
+        status = "Koniec gry, REMIS!"
       }else{
-        status = 'Next player: ' +  (this.state.xIsNext ? 'X' : 
-        'O')
+        if(winner){
+          status = "Wygrywa gracz " + winner.winner
+          for(let i = 0; i < winner.line.length; i++){
+            current.squares[winner.line[i]] = 'Z'
+          }
+        }else{
+          status = 'Next player: ' +  (this.state.xIsNext ? 'X' : 
+          'O')
+        } 
       }
 
       const moves = history.map((step,move) => {
@@ -167,7 +179,10 @@ class Square extends React.Component {
     for(let i = 0; i< lines.length; i++){
       const [a,b,c] = lines[i];
       if(squares[a] && squares[a] == squares[b] && squares[a] == squares[c]){
-        return squares[a]
+        return {
+          winner: squares[a], 
+          line: [a,b,c]
+        }
       }
     }
     return null;
